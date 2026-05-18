@@ -1,0 +1,33 @@
+# ── API ──────────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+httpx==0.27.0
+pydantic==2.7.1
+pydantic-settings==2.2.1
+python-dotenv==1.0.1
+
+# ── LLM / Agentes ────────────────────────────────────────────────────
+langchain==0.2.1
+langchain-community==0.2.1
+langgraph==0.1.5
+ollama==0.2.1
+
+# ── Embeddings locais (equivalente ao Amazon Titan Embeddings) ────────
+sentence-transformers==3.0.0
+
+# ── Vector Store ─────────────────────────────────────────────────────
+# Local: Qdrant  →  AWS: OpenSearch Serverless ou pgvector (Aurora)
+qdrant-client==1.9.1
+langchain-qdrant==0.1.1
+
+# ── AWS (preparação para transição) ──────────────────────────────────
+boto3==1.34.107
+langchain-aws==0.1.6          # LangChain com Bedrock, já usa mesma interface
+
+# ── Observabilidade ───────────────────────────────────────────────────
+# Troca direta: local (LangSmith free) → AWS (CloudWatch + X-Ray)
+langsmith==0.1.60
+
+# ── Utilitários ───────────────────────────────────────────────────────
+tiktoken==0.7.0               # contagem de tokens
+tenacity==8.3.0               # retry logic (essencial para chamadas LLM)

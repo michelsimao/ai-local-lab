@@ -1,0 +1,7 @@
+# exemplo essencial .gitignore
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+docker-compose.override.yml
