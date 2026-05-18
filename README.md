@@ -219,11 +219,3 @@ make clean
 - Adicionar scripts de manutenção para limpar coleções de teste do Qdrant.
 
 ---
-
-Se quiser, eu posso:
-
-- adicionar exemplos de requests `curl` para `ingest` e `chat`;
-- criar um `Makefile` com comandos úteis (`make test`, `make integration`);
-- configurar GitHub Actions para rodar testes unitários e, opcionalmente, integração.
-
-Diga qual destes você prefere que eu faça a seguir.
