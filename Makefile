@@ -3,7 +3,7 @@ PYTHON=$(VENV)/bin/python
 PIP=$(VENV)/bin/pip
 UVICORN=$(VENV)/bin/uvicorn
 
-.PHONY: install run test integration clean
+.PHONY: install run ui test integration clean
 
 install:
 	python3 -m venv $(VENV)
@@ -12,6 +12,9 @@ install:
 
 run:
 	$(PYTHON) -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+ui:
+	streamlit run ui/streamlit_app.py
 
 test:
 	$(PYTHON) -m pytest -q

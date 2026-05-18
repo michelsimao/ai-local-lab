@@ -31,3 +31,4 @@ langsmith==0.1.60
 # ── Utilitários ───────────────────────────────────────────────────────
 tiktoken==0.7.0               # contagem de tokens
 tenacity==8.3.0               # retry logic (essencial para chamadas LLM)
+streamlit==1.28.0             # interface gráfica local para demo

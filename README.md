@@ -104,7 +104,13 @@ pip install -r requirements.txt
 docker compose up --build
 ```
 
-5. Rode a API localmente (quando o ambiente estiver pronto):
+5. Rode a interface Streamlit para usar a aplicação via browser:
+
+```bash
+streamlit run ui/streamlit_app.py
+```
+
+6. Rode a API localmente (quando o ambiente estiver pronto):
 
 ```bash
 .venv/bin/python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
